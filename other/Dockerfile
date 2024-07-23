@@ -99,4 +99,5 @@ VOLUME /litefs
 ADD . .
 
 EXPOSE ${PORT}
+RUN chmod +x /myapp/other/docker-entry-point.sh
 ENTRYPOINT ["/myapp/other/docker-entry-point.sh"]
